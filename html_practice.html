@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <title>Page Title</title>
+  <script>
+      function calc(){
+          var x = document.getElementById("x").value;
+          var y = document.getElementById("y").value;
+          sum = parseInt(x) + parseInt(y);
+          document.getElementById("sum").value = sum;
+          
+          //$("#sum").value(sum);
+        
+          
+      }
+      //document.getElementById('name').innerHTML="이순신";
+  </script>
+
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+    <p id="name">정인섭</p>
+    <script>
+        //위의 p 밑에 script가 와야 아래 내용으로 바뀐다.
+        document.getElementById('name').innerHTML="이순신";
+    </script>
+
+    <form>
+        <input id="x"/><br>
+        <input id="y"/><br>
+        <input id="sum"/><br>
+        <input type="button" value="계산" onclick="calc();"/>
+    </form>
+  </body>
+</html>
